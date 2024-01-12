@@ -20,6 +20,7 @@ const Navigation = () => {
 					tabBarIcon: ({ color, size }) => (
 						<Icon name="user" color={color} size={size} />
 					),
+					title: "Mi cuenta",
 				}}
 			/>
 			<Tab.Screen
@@ -28,6 +29,7 @@ const Navigation = () => {
 				options={{
 					tabBarLabel: "",
 					tabBarIcon: () => renderPokeball(),
+					title: "Pokedex",
 				}}
 			/>
 			<Tab.Screen
@@ -38,6 +40,7 @@ const Navigation = () => {
 					tabBarIcon: ({ color, size }) => (
 						<Icon name="heart" color={color} size={size} />
 					),
+					title: "Favoritos",
 				}}
 			/>
 		</Tab.Navigator>

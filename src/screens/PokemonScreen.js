@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const Pokemon = () => {
+const PokemonScreen = () => {
 	return (
 		<View>
 			<Text>Pokemon</Text>
@@ -9,4 +9,4 @@ const Pokemon = () => {
 	);
 };
 
-export default Pokemon;
+export default PokemonScreen;

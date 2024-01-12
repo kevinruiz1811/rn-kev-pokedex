@@ -12,7 +12,8 @@ const AccountNavigation = () => {
 				name="Account"
 				component={AccountScreen}
 				options={{
-					title: "Mi cuenta",
+					title: "",
+					headerTransparent: true,
 				}}
 			/>
 		</Stack.Navigator>

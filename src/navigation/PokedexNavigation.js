@@ -1,8 +1,8 @@
 import React from "react";
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator } from "@react-navigation/stack";
 
 import PokedexScreen from "../screens/PokedexScreen";
-import Pokemon from "../screens/Pokemon";
+import PokemonScreen from "../screens/PokemonScreen";
 
 const Stack = createStackNavigator();
 
@@ -12,11 +12,9 @@ const PokedexNavigation = () => {
 			<Stack.Screen
 				name="Pokedex"
 				component={PokedexScreen}
+				options={{ title: "", headerTransparent: true }}
 			/>
-			<Stack.Screen
-				name="Pokemon"
-				component={Pokemon}
-			/>
+			<Stack.Screen name="PokemonScreen" component={PokemonScreen} />
 		</Stack.Navigator>
 	);
 };

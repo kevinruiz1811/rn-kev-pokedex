@@ -12,7 +12,8 @@ const FavoritesNavigation = () => {
 				name="Favorite"
 				component={FavoritesScreen}
 				options={{
-					title: "Favoritos",
+					title: "",
+					headerTransparent: true,
 				}}
 			/>
 		</Stack.Navigator>
