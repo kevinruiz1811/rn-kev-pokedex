@@ -18,8 +18,6 @@ const LoginForm = () => {
 	const [error, setError] = useState("");
 	const { login } = UseAuth();
 
-    console.log(UseAuth());
-
 	const formik = useFormik({
 		initialValues: initialValues(),
 		validationSchema: Yup.object(validationSchema()),
@@ -36,7 +34,6 @@ const LoginForm = () => {
 				setError("El usuario o contraseña son incorrectos");
 			} else {
 				login(userDetails);
-				console.log("Datos correctos");
 			}
 		},
 	});
